@@ -11,7 +11,7 @@ function App() {
     <div className="container-fluid">
       <Sidebar />
       <Presentation />
-      <Knowledgeknowledge />
+      //<Knowledgeknowledge />
       <Teaching />
       <Experience />
       <Footer />
