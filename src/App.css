@@ -1,0 +1,70 @@
+:root {
+  --white: #eaeaea;
+  --black: #050404;
+  --dark: #000000;
+  --grey: #ccd1d1;
+  --red: #c5283d;
+  --orange: #e9724c;
+  --yellow: #ffc857;
+  --purple: #a03cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 67em) {
+  html {
+      font-size: 93.75%;
+  }
+}
+
+@media (max-width: 45em) {
+  html {
+      font-size: 87.5%;
+  }
+}
+
+body {
+  color: var(--white);
+  background: var(--dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 500 1rem "Helvetica", sans-serif;
+}
+
+
+/* Generics styles */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong {
+  color: var(--purple);
+}
+
+/* ##################################### appear animations ###################################### */
+
+.reveal {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  display: none;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+  display: block;
+}
